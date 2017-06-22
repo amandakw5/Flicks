@@ -38,6 +38,10 @@ public class Config {
         return imageBaseUrl;
     }
 
+    public String getBackdropSize() {
+        return backdropSize;
+    }
+
     public String getPosterSize() {
         return posterSize;
     }
