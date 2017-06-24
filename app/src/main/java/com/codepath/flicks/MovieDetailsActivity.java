@@ -51,6 +51,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     @BindView(R.id.tvOverview) TextView tvOverview;
     @BindView(R.id.rbVoteAverage) RatingBar rbVoteAverage;
     @BindView(R.id.back) ImageView back;
+    @BindView(R.id.release) TextView release;
 
 
     @Override
@@ -79,6 +80,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         // set the title and overview
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
+        release.setText("Release date: " + movie.getRelease());
 
         // vote average is 0..10, convert to 0..5 by dividing by 2
         float voteAverage = movie.getVote_average().floatValue();

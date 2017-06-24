@@ -27,7 +27,9 @@
         android:layout_toRightOf="@+id/ivBackdropImage"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:fontFamily="serif"/>
 
     <TextView
         android:id="@+id/tvOverview"
@@ -37,6 +39,7 @@
         android:layout_toEndOf="@+id/ivBackdropImage"
         android:layout_toRightOf="@+id/ivBackdropImage"
         android:text="TextView"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"/>
 
 </RelativeLayout>

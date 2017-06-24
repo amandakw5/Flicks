@@ -63,4 +63,15 @@
         android:layout_alignRight="@+id/rbVoteAverage"
         android:layout_alignEnd="@+id/rbVoteAverage" />
 
+    <TextView
+        android:id="@+id/release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvOverview"
+        android:layout_alignRight="@+id/tvOverview"
+        android:layout_below="@+id/tvOverview"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif"/>
+
 </RelativeLayout>
