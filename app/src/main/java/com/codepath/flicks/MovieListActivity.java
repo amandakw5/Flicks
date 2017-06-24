@@ -25,7 +25,7 @@ public class MovieListActivity extends AppCompatActivity {
     //constants
     //the base url for the API
     public final static String API_BASE_URL = "https://api.themoviedb.org/3";
-    //the parameter name for trhe API key
+    //the parameter name for the API key
     public final static String API_KEY_PARAM = "api_key";
     // tag for log in from the activity
     public final static String TAG = "MovieListActivity";
@@ -60,9 +60,8 @@ public class MovieListActivity extends AppCompatActivity {
 
         // get the configuration on app creation
         getConfiguration();
-
     }
-    // get the list of currently plahying movies from the API
+    // get the list of currently playing movies from the API
     private void getNowPlaying() {
         // create the url
         String url = API_BASE_URL + "/movie/now_playing";
@@ -86,7 +85,6 @@ public class MovieListActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     logError("Failed to parse now playing movies", e, true);
                 }
-
             }
 
             @Override
@@ -123,7 +121,7 @@ public class MovieListActivity extends AppCompatActivity {
                     // get the now playing movie list
                     getNowPlaying();
                 } catch (JSONException e) {
-                    logError("Failed aprsing configuration", e, true);
+                    logError("Failed parsing configuration", e, true);
                 }
             }
         });

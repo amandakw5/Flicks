@@ -2,6 +2,7 @@ package com.codepath.flicks.models;
 /**
  * Created by awestort on 6/21/17.
  */
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
@@ -16,6 +17,8 @@ public class Movie {
     String posterPath; // only the path
     String backdropPath;
     Double vote_average;
+    Integer id;
+    String imgUrl;
 
     // initialize from JSON data
     public Movie(JSONObject object) throws JSONException {
@@ -24,6 +27,7 @@ public class Movie {
         posterPath = object.getString("poster_path");
         backdropPath = object.getString("backdrop_path");
         vote_average = object.getDouble("vote_average");
+        id = object.getInt("id");
     }
 
     public Double getVote_average() {
@@ -41,7 +45,21 @@ public class Movie {
     public String getPosterPath() {
         return posterPath;
     }
+
     public String getBackdropPath() {
         return backdropPath;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
 }

@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codepath.flicks.MovieListActivity"
-    android:background="#000000">
+    tools:context="com.codepath.flicks.models.MovieTrailerActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMovies"
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#FFFFFF"/>
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
 
 </RelativeLayout>

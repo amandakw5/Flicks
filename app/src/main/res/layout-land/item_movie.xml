@@ -26,7 +26,8 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivBackdropImage"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/tvOverview"
@@ -35,6 +36,7 @@
         android:layout_below="@+id/tvTitle"
         android:layout_toEndOf="@+id/ivBackdropImage"
         android:layout_toRightOf="@+id/ivBackdropImage"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#FFFFFF"/>
 
 </RelativeLayout>
